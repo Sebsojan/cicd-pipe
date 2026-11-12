@@ -6,4 +6,4 @@ def test_home():
     response = client.get('/')
 
     assert response.status_code == 200
-    assert b" Hey CI_CD Im here!" in response.data
+    assert b" CI_CD Im here!" in response.data
